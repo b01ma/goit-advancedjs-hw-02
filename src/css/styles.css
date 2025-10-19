@@ -10,6 +10,44 @@ main {
   
  }
 
+/* Snackbar page form styles (scoped) */
+.form {
+  display: grid;
+  gap: 16px;
+}
+
+.form label {
+  display: block;
+}
+
+.form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form fieldset {
+  border: 2px solid #bdbdbd;
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+
+.form legend {
+  padding: 0 6px;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  padding: 10px 16px;
+  background: #e0e0e0;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
 #datetime-picker {
   padding: 10px;
   margin: 10px;
@@ -50,7 +88,7 @@ button[data-start]:not(:disabled):hover {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.field {
+.timer .field {
   text-align: center;
   padding: 15px;
   background-color: #f8f9fa;
@@ -84,12 +122,21 @@ button[data-start]:not(:disabled):hover {
     gap: 10px;
   }
   
-  .field {
+  .timer .field {
     min-width: 60px;
     padding: 10px;
   }
   
-  .value {
+  .timer .value {
     font-size: 32px;
   }
 } 
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 16px;
+    background: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    cursor: pointer;
+}

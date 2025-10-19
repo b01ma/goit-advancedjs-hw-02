@@ -8,6 +8,29 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-  <script type="module" src="./main.js"></script>
+    <main>
+      <form class="form" id="promise-form">
+        <label>
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+
+        <button type="submit">Create notification</button>
+      </form>
+    </main>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>
